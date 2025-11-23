@@ -5,10 +5,14 @@
 
 
 @theme{
-    --color-primary: #10ac84;
+    --color-textColor: #0b1e3b;
+    --color-primaryColor: #21394e;
     --font-lato: "Lato", sans-serif;
 }
-
+/* Gradient Color */
+.gradient{
+    background: linear-gradient(135deg, #0b1e3b 0%, #3b82f6 100%);
+}
 /* ==========================================
 NAVIGATION STYLES
 ========================================== */
@@ -25,7 +29,7 @@ NAVIGATION STYLES
     height: 2px;
     bottom: -4px;
     left: 0;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #0b1e3b 0%, #3b82f6 100%);
     transition: width 0.3s ease;
 }
 
@@ -119,7 +123,7 @@ HERO & GRADIENT STYLES
 
 /* Gradient Text */
 .gradient-text {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #0b1e3b 0%, #3b82f6 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -151,7 +155,7 @@ BUTTON STYLES
 
 /* Primary Button */
 .btn-primary {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #0b1e3b 0%, #3b82f6 100%);
     color: white;
     padding: 0.75rem 2rem;
     border-radius: 9999px;
@@ -232,7 +236,7 @@ SKILLS TAB STYLES
 }
 
 .tab-button.active {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #0b1e3b 0%, #3b82f6 100%);
     color: white;
 }
 
@@ -244,6 +248,15 @@ SKILLS TAB STYLES
 .skill-badge:hover {
     transform: translateY(-4px);
     box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+}
+
+/* Service Card Hover Effect */
+.service-card {
+    transition: all 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
 }
 
 /* ==========================================
